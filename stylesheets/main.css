@@ -45,7 +45,6 @@ nav {
   width: 100px;
 }
 
-
 .logo svg {
   fill: #fff;
   height: 20px;
@@ -55,10 +54,6 @@ nav {
 .weather-icon {
   width: 24px;
   height: 24px;
-}
-
-.weather-info {
-  /* margin: auto; */
 }
 
 .weather-text {
@@ -77,6 +72,10 @@ nav {
   margin-right: 5px;
 }
 
+.signin {
+  margin-left: 20px;
+}
+
 .menu-bar {
   height: 50px;
   cursor: pointer;
@@ -84,9 +83,4 @@ nav {
   text-align: center;
   color: #999;
   padding-top: 6px;
-  margin: auto;
-}
-
-.actions {
-  /* margin: auto; */
 }
