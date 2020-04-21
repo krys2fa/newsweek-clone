@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.flex-h,
+.flex-v {
+  display: flex;
+}
+
+.flex-v {
+  flex-direction: column;
+}
+
+.align-baseline {
+  align-items: baseline !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+nav {
+  background-color: #f72210;
+  height: 50px;
+  color: #fff;
+  /* line-height: 0; */
+}
+
+.navbar-brand svg {
+  fill: #fff;
+  height: 20px;
+}
+
+.weather-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.weather-info {
+  margin: auto;
+}
+
+.weather-text {
+  font-size: 15px;
+}
+
+.subscribe a {
+  background-color: #fff;
+  color: #f72210;
+  padding: 0 10px;
+}
+
+.signin,
+.subscribe {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.menu-bar {
+  width: 74px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 26px;
+  text-align: center;
+  color: #999;
+}
