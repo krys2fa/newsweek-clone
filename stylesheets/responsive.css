@@ -28,10 +28,10 @@
   }
 
   .footer-main {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #eee;
   }
 
   .social-icons {
@@ -50,7 +50,7 @@
   .footer-menu {
     color: #d9d9d9;
     font-size: 14px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .leaf::after {
@@ -62,7 +62,6 @@
   .footer-links-edition li {
     margin-right: 0;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -147,5 +146,4 @@
     float: left;
     width:71%;
   } */
-
 }
