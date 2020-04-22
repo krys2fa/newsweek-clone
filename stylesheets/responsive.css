@@ -81,11 +81,13 @@
   }
 
   .bar {
+    display: block;
     height: 15px;
     /* background-color: yellow; */
   }
 
   .main-menu {
+    display: flex;
     background-color: white;
     border-bottom: 1px solid #eee;
   }
