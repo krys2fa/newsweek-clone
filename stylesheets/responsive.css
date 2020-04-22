@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   nav {
     width: 100%;
     grid-template-columns: 50% 50%;
@@ -6,6 +6,7 @@
 
   .weather-info {
     display: flex;
+    margin-right: 100px;
   }
 
   .subscribe span {
@@ -18,22 +19,16 @@
     grid-template-columns: repeat(3, 33.3%);
   }
 
-  .weather-info {
-    margin-right: 100px;
-  }
-
   .subscribe-mobile {
     display: none;
   }
 
   .subscribe-tablet {
-    display: block; 
+    display: block;
   }
-
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 1024px) {
   .small-screen {
     display: none;
   }
@@ -51,7 +46,7 @@
   }
 
   .weather-info {
-    margin: 0px;
+    margin: 0;
   }
 
   .left {
@@ -77,13 +72,12 @@
   }
 
   .subscribe {
-    margin-right: 0;;
+    margin-right: 0;
   }
 
   .bar {
     display: block;
     height: 15px;
-    /* background-color: yellow; */
   }
 
   .main-menu {
@@ -99,7 +93,12 @@
     width: 85%;
   }
 
-   .menu-list a {
-     color: #000;
-   }
+  .menu-list a {
+    color: #000;
+  }
+
+  .line-after::after {
+    content: " | ";
+    margin-left: 10px;
+  }
 }
