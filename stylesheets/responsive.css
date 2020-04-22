@@ -41,6 +41,24 @@
   .copyright {
     margin-left: -200px;
   }
+
+  .footer-menu,
+  .footer-links-edition {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-menu {
+    color: #d9d9d9;
+    font-size: 14px;
+    padding-left: 0px;
+  }
+
+  .leaf::after {
+    content: "|";
+    color: #aaa;
+    margin: 0 10px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

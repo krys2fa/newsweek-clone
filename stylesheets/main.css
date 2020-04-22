@@ -126,3 +126,24 @@ nav {
   padding-bottom: 20px;
   color: #666;
 }
+
+.footer-links-edition label {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.footer-menu {
+  list-style: none;
+  color: #eee;
+}
+
+.footer-menu a {
+  color: #666;
+}
+
+.first {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 6px 0;
+  cursor: pointer;
+}
