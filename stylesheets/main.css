@@ -98,3 +98,31 @@ nav {
   color: #999;
   padding-top: 6px;
 }
+
+.footer-logo {
+  margin: 20px 30px 15px 0;
+}
+
+.footer-logo svg {
+  fill: #f72210;
+  width: 85%;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.social-icons {
+  font-size: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  padding-bottom: 20px;
+  color: #666;
+}
