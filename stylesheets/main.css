@@ -132,6 +132,16 @@ nav {
   margin-right: 15px;
 }
 
+.footer-links-edition ul {
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-links-edition li{
+  margin-right: 20px;
+}
+
 .footer-menu {
   list-style: none;
   color: #eee;
@@ -139,5 +149,15 @@ nav {
 
 .footer-menu a {
   color: #666;
+}
+
+.extra-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.extra-links li {
+  margin: 0 10px 0 0;
 }
 

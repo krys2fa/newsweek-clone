@@ -56,12 +56,11 @@
   .leaf::after {
     content: "|";
     color: #aaa;
-    margin: 0 10px;
+    margin: 0 5px;
   }
 
-  .extra-links {
-    display: flex;
-    flex-wrap: wrap;
+  .footer-links-edition li {
+    margin-right: 0;
   }
 
 }
