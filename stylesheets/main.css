@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -106,20 +106,54 @@ nav {
 }
 
 .newsletter {
-  border: 1px solid #eee;
+  /* border: 1px solid #eee; */
   padding: 15px 0;
+  width: 100%;
+  margin: auto;
+}
+
+.subscribe-block {
+  background-color: #f4f5f6;
+}
+
+.subscribe-img-1 {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.subscribe-img-2 {
+  position: relative;
+  top: -195px;
+  left: 100px;
+}
+
+.subscribe-body {
+  margin-top: -170px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.subscribe-body {
+  color: #333;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.subscribe-body h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .newsletter-img {
   background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
-  height: 170px;
+  width: 100%;
 }
 
 .newsletter-text {
-  height: 211px;
   text-align: center;
   border: 1px solid #eee;
-  margin-bottom: 10px;
+  margin: auto;
 }
 
 .newsletter-text h3{
@@ -129,18 +163,19 @@ nav {
 }
 
 .newsletter-text p {
-  margin: 20px 35px;
+  margin: auto;
   font-weight: lighter;
   font-size: 15px;
 }
 
-.newsletter-text span {
+.red-button {
    display: inline-block;
     background-color: #f72210;
     padding: 10px 10px 10px 12px;
     color: white;
     font: bold 18px/18px "Roboto Condensed",sans-serif;
     text-transform: uppercase;
+    margin: 20px 0;
 }
 
 .footer-logo {
