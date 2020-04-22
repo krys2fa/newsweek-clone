@@ -26,6 +26,21 @@
   .subscribe-tablet {
     display: block;
   }
+
+  .footer-main {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     border-bottom: 1px solid #eee;
+  }
+
+  .social-icons {
+    border-bottom: none;
+  }
+
+  .copyright {
+    margin-left: -200px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
