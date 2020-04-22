@@ -13,7 +13,7 @@
   }
 
   .actions {
-    margin-right: 0px;
+    margin-left: 115px;
     display: grid;
     grid-template-columns: repeat(3, 33.3%);
   }
@@ -30,8 +30,74 @@
     display: block; 
   }
 
-  .actions {
-    margin-left: 115px;
+}
+
+@media screen and (min-width: 1024px){
+
+  .small-screen {
+    display: none;
   }
 
+  .large-screen {
+    display: block;
+    width: 100%;
+    height: 100px;
+    height: 95px;
+    padding: 20px 10px 15px;
+  }
+
+  .logo {
+    height: 85px;
+  }
+
+  .weather-info {
+    margin: 0px;
+  }
+
+  .left {
+    width: 20%;
+    margin: 0 auto;
+  }
+
+  .middle {
+    width: 60%;
+    color: #fff;
+    margin: 0 auto;
+  }
+
+  .right {
+    width: 20%;
+    margin: 40px 0 10px 50px;
+  }
+
+  .middle svg {
+    fill: #fff;
+    height: 45px;
+    margin: 5px 0 0 130px;
+  }
+
+  .subscribe {
+    margin-right: 0;;
+  }
+
+  .bar {
+    height: 15px;
+    /* background-color: yellow; */
+  }
+
+  .main-menu {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-list {
+    height: 24px;
+    list-style: none;
+    padding: 5px;
+    width: 85%;
+  }
+
+   .menu-list a {
+     color: #000;
+   }
 }

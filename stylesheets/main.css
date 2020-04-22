@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .hide {
   display: none;
 }
@@ -35,6 +39,10 @@ body {
 
 .align-center {
   align-items: center !important;
+}
+
+.large-screen {
+  display: none;
 }
 
 nav {
