@@ -42,7 +42,6 @@
     margin-left: -200px;
   }
 
-  .footer-menu,
   .footer-links-edition {
     display: flex;
     align-items: baseline;
@@ -59,6 +58,12 @@
     color: #aaa;
     margin: 0 10px;
   }
+
+  .extra-links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -139,5 +144,9 @@
     margin-left: -420px;
   }
 
+  /* .extra-links {
+    float: left;
+    width:71%;
+  } */
 
 }
