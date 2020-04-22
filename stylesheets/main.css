@@ -41,7 +41,9 @@ a {
   align-items: center !important;
 }
 
-.large-screen {
+.large-screen,
+.bar,
+.main-menu {
   display: none;
 }
 
