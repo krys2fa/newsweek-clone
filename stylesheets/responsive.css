@@ -116,4 +116,10 @@
     content: " | ";
     margin-left: 10px;
   }
+
+  .copyright {
+    margin-left: -420px;
+  }
+
+
 }
