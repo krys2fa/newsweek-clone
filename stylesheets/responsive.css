@@ -27,6 +27,10 @@
     display: block;
   }
 
+  .newsletter-img {
+    height: 210px;
+  }
+
   .footer-main {
     display: flex;
     justify-content: space-between;
