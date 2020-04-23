@@ -171,11 +171,23 @@ nav {
   background-image: url("https://d.newsweek.com/en/full/1583616/mark-zuckerberg.jpg?w=397&h=265&l=0&t=0&q=90&f=27af46117b473388c86e609283016d9b");
 }
 
+.versus {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed",
+    sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
+
 .editor-img {
-    height: 195px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 20px;
+  height: 195px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
 }
 
 .editors-pic-1 {
