@@ -111,12 +111,13 @@ nav {
   padding-top: 6px;
 }
 
-.featured h6 {
+.title-color {
   color: #03030366;
 }
 
 .featured h3,
 .featured h6,
+.top-story h6,
 .summary {
   margin: 10px 0;
 }
@@ -142,6 +143,7 @@ nav {
 .feature-img {
   height: 195px;
   background-size: contain;
+  background-repeat: no-repeat;
   padding-bottom: 20px;
 }
 
@@ -163,6 +165,98 @@ nav {
 
 .feature-img-5 {
   background-image: url("https://d.newsweek.com/en/full/1583616/mark-zuckerberg.jpg?w=397&h=265&l=0&t=0&q=90&f=27af46117b473388c86e609283016d9b");
+}
+
+.editor-img {
+    height: 195px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+.editors-pic-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583723/prison.jpg?w=397&h=295&f=e9f728d5878d2e7f2fa202ad2a2083e7");
+}
+
+.editors-pic-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583902/grocery-shopping-during-coronavirus-pandemic.jpg?w=397&h=295&f=d9e18d18477492273e4339380ab126b0");
+}
+
+.editors-pic-3 {
+  background-image: url("https://d.newsweek.com/en/full/1583743/china-us-treasury-stimulus-check.jpg?w=397&h=295&f=1dab576ee81a648988f0cdf8346399aa");
+}
+
+.editors-pic-4 {
+  background-image: url("https://d.newsweek.com/en/full/1583877/prince-louis-celebrates-turning-two.jpg?w=397&h=295&f=ec28ba3ff1b74acd4e7e5f2d833ce173");
+}
+
+.editors-pic-5 {
+  background-image: url("https://d.newsweek.com/en/full/1583698/food-bank.jpg?w=397&h=295&l=0&t=0&f=1ce73f8f83590f5c54cfed34e0f60152");
+}
+
+.editors-pic-6 {
+  background-image: url("https://d.newsweek.com/en/full/1583668/istock-world-book-day-2020.jpg?w=397&h=295&f=9e8298958f31fff8b5092253f66c83b1");
+}
+
+.editors-pic-7 {
+  background-image: url("https://d.newsweek.com/en/full/1583258/shakespeare-lockdown-movies-theatre-family.jpg?w=397&h=295&f=5b18763b1a6297b273e12d4eb794b772");
+}
+
+.editors-pic-8 {
+  background-image: url("https://d.newsweek.com/en/full/1583555/covid19-coronavirus-conjunctivitis-getty-stock.jpg?w=397&h=295&f=8e26bcb70caf8a68460a053486f42980");
+}
+
+.top-story-img {
+  height: 242px;
+  background-image: url("https://d.newsweek.com/en/full/1583798/iran-navy-irgc-persian-gulf-encounter.jpg?w=591&h=364&f=a116cf0c46fa002bc709a4cff1c4baa4");
+  margin-bottom: 10px;
+}
+
+.hero-title {
+  font-weight: bold;
+}
+
+.hero-img {
+  width: 117px;
+  height: 117px;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.hero-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1578426/zoe-monterola-founder-six-feet-supplies.jpg?w=397&h=397&f=f7a624e81aa902878bb39d5fe83e971f");
+}
+
+.hero-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1581628/sandra-sacco-face-masks-coronavirus.jpg?w=397&h=397&f=7892f6ddd82131592228622320b031ef");
+}
+
+.hero-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1582032/riya-ortiz-damayan-migrant-workers-association.jpg?w=397&h=397&f=53de83c7597de80f95461e7b0774eada");
+}
+
+.cnt-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583546/jane-goodall-gombe-national-park.jpg?w=397&h=397&f=f50a96dc831960add317ee03eb1794d2");
+}
+
+.cnt-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583367/susan-portnoy-1.jpg?w=397&h=397&f=9f78c9fa9d117991919b49684a5d9140");
+}
+
+.cnt-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1552272/cul-map-underwater-03.jpg?w=397&h=397&f=38a37908ac75c7b800c8c3306baa948d");
+}
+
+.content {
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.thumbnail {
+  float: left;
+  width: 95px;
+  height: 95px;
+  margin-right: 10px;
 }
 
 .subscribe-block {
