@@ -92,7 +92,6 @@
     height: 270px;
     padding-top: 35px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -172,10 +171,12 @@
   .copyright {
     margin-left: -420px;
   }
-.subscribe-img {
-  background-position: 700% 100%,
-  0% 15%;
-  padding: 0;
-  margin: 0;
-}
+
+  .subscribe-img {
+    background-position:
+      700% 100%,
+      0% 15%;
+    padding: 0;
+    margin: 0;
+  }
 }
