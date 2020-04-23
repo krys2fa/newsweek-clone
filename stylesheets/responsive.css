@@ -71,6 +71,7 @@
 
   .newsletter-text {
     text-align: left;
+    border-left: none;
   }
 }
 

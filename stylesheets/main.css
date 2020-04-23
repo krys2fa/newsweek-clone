@@ -107,24 +107,18 @@ nav {
 
 .subscribe-block {
   background-color: #f4f5f6;
+  margin: 10px 15px 20px;
+  padding-top: 20px
 }
 
 .subscribe-img {
-  /* width: 260px; */
-
   height: 241px;
-}
-
-.subscribe-img-1 {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-
-.subscribe-img-2 {
-  position: relative;
-  top: -195px;
-  left: 100px;
+  margin: 0 auto;
+  width: 100%;
+  background: url("https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=170&q=95&f=1a0d984a3141e5762557f214ca2a1540"),
+  url("https://d.newsweek.com/en/full/1579878/april-17-24-2020-cover.jpg?w=170&q=95&f=b4884b3be2e05e586232cc3f3d569aa8");
+   background-repeat: no-repeat;
+   background-position: 85% 100%,30% 15%;
 }
 
 .subscribe-section {
@@ -143,7 +137,7 @@ nav {
 
 .subscribe-body h3,
 .subscribe-body p {
-  margin: 10px auto;
+  margin: 5px auto;
   padding: 0 20px;
 }
 
