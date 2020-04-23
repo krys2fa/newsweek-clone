@@ -24,6 +24,10 @@ h6 {
   display: none;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .flex-h,
 .flex-v {
   display: flex;
