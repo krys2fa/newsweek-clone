@@ -109,6 +109,12 @@ nav {
   background-color: #f4f5f6;
 }
 
+.subscribe-img {
+  /* width: 260px; */
+
+  height: 241px;
+}
+
 .subscribe-img-1 {
   position: relative;
   top: 20px;
@@ -127,7 +133,7 @@ nav {
 }
 
 .subscribe-body {
-  margin-top: -170px;
+  /* margin-top: -170px; */
   text-align: center;
   line-height: 1.5;
   color: #333;
@@ -155,7 +161,7 @@ nav {
   /* border: 1px solid #eee; */
   padding: 15px 0;
   /* width: 100%; */
-  margin: auto;
+  /* margin: auto; */
 }
 
 .newsletter-img {

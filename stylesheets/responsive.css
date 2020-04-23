@@ -27,6 +27,7 @@
     display: block;
   }
 
+  .newsletter-text,
   .newsletter-img {
     height: 210px;
   }
