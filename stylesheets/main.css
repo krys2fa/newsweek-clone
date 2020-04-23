@@ -127,7 +127,6 @@ nav {
 }
 
 .subscribe-body {
-  /* margin-top: -170px; */
   text-align: center;
   line-height: 1.5;
   color: #333;
@@ -152,14 +151,11 @@ nav {
 }
 
 .newsletter {
-  /* border: 1px solid #eee; */
   padding: 15px 0;
-  /* width: 100%; */
-  /* margin: auto; */
 }
 
 .newsletter-img {
-  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
+  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / 90% no-repeat;
   height: 160px;
 }
 
