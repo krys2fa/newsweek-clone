@@ -27,6 +27,19 @@
     display: block;
   }
 
+  .subscribe-block {
+    width: 100%;
+    display: flex;
+  }
+
+  .subscribe-body {
+    text-align: left;
+  }
+
+  .subscribe-body a {
+    margin-left: 20px;
+  }
+
   .newsletter-text,
   .newsletter-img {
     height: 210px;
