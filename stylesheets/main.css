@@ -20,6 +20,10 @@ h6 {
   font-weight: 700;
 }
 
+h3 {
+  font-weight: bold;
+}
+
 .hide {
   display: none;
 }
@@ -39,6 +43,10 @@ h6 {
 
 .grid {
   display: grid;
+}
+
+.center {
+  justify-content: center;
 }
 
 .text-center {
@@ -130,18 +138,31 @@ nav {
   font-weight: bold;
 }
 
-.category {
+.tag {
   display: block;
-  font: bold 17px/16px "Roboto Condensed",
-    sans-serif;
   color: #f72210;
   text-transform: uppercase;
-  padding: 8px 15px 9px;
   background-color: #ffffffe6;
-  position: absolute;
-  bottom: 142px;
-  left: 15px;
-  z-index: 1;
+  font: bold 17px/16px "Roboto Condensed", sans-serif;
+  position: relative;
+  top: 164px;
+  height: 30px;
+  padding: 8px 15px 9px;
+}
+
+.top-story-tag {
+  top: 212px;
+}
+
+.top-story-img {
+  height: 242px;
+  background-image: url("https://d.newsweek.com/en/full/1583798/iran-navy-irgc-persian-gulf-encounter.jpg?w=591&h=364&f=a116cf0c46fa002bc709a4cff1c4baa4");
+  margin-bottom: 10px;
+}
+
+.top-story {
+  margin-bottom: 20px;
+  ;
 }
 
 .feature-img {
@@ -222,10 +243,9 @@ nav {
   background-image: url("https://d.newsweek.com/en/full/1583555/covid19-coronavirus-conjunctivitis-getty-stock.jpg?w=397&h=295&f=8e26bcb70caf8a68460a053486f42980");
 }
 
-.top-story-img {
-  height: 242px;
-  background-image: url("https://d.newsweek.com/en/full/1583798/iran-navy-irgc-persian-gulf-encounter.jpg?w=591&h=364&f=a116cf0c46fa002bc709a4cff1c4baa4");
-  margin-bottom: 10px;
+.heroes {
+  margin-top: 20px;
+  ;
 }
 
 .hero-title {
@@ -233,10 +253,25 @@ nav {
 }
 
 .hero-img {
-  width: 117px;
-  height: 117px;
+  /* width: 117px;
+  height: 117px; */
+  width: 290px;
+  height: 290px;
   background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
+}
+
+.hero-tag {
+  color: #272727;
+  text-transform: capitalize;
+  font-weight: normal;
+  background-color: #b5bcc4;
+  top: 260px;
+}
+
+.info {
+  margin-bottom: 30px;
 }
 
 .hero-img-1 {
@@ -263,16 +298,74 @@ nav {
   background-image: url("https://d.newsweek.com/en/full/1552272/cul-map-underwater-03.jpg?w=397&h=397&f=38a37908ac75c7b800c8c3306baa948d");
 }
 
-.content {
-  padding-top: 15px;
-  border-top: 1px solid #eee;
-}
-
 .thumbnail {
   float: left;
   width: 95px;
   height: 95px;
   margin-right: 10px;
+}
+
+.opinions {
+  margin-top: 20px;
+}
+
+.opinion {
+  margin-bottom: 20px;
+}
+
+.opinion-info {
+  margin-left: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+.byline {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.latest-news {
+  margin-top: 20px;
+}
+
+.content {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.image-red-top {
+  border-top: 4px solid #ff0000;
+}
+
+.image-blue-top {
+  border-top: 4px solid #0000ff;
+}
+
+.debate {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.debator {
+  border-top: 1px solid #eee;
+  margin-top: 3px;
+}
+
+.debator span {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.debator a {
+  font-weight: bold;
+}
+
+.headshot {
+  height: 63px;
+  width: 63px;
 }
 
 .subscribe-block {
@@ -290,6 +383,23 @@ nav {
     url("https://d.newsweek.com/en/full/1579878/april-17-24-2020-cover.jpg?w=170&q=95&f=b4884b3be2e05e586232cc3f3d569aa8");
   background-repeat: no-repeat;
   background-position: 85% 100%, 30% 15%;
+}
+
+.magazines {
+  margin-top: 20px;
+}
+
+.heading {
+  margin: 0 auto;
+}
+
+.logo-icon {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210;
+  margin-right: 10px;
 }
 
 .subscribe-section {
@@ -388,7 +498,6 @@ nav {
 }
 
 .footer-main {
-  /* border-top: 1px solid #eee; */
   margin: 10px auto 0;
   padding-top: 10px;
 }
