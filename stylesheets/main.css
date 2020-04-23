@@ -6,6 +6,12 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 20px;
 }
 
 h6 {
@@ -103,6 +109,60 @@ nav {
   text-align: center;
   color: #999;
   padding-top: 6px;
+}
+
+.featured h6 {
+  color: #03030366;
+}
+
+.featured h3,
+.featured h6,
+.summary {
+  margin: 10px 0;
+}
+
+.featured a {
+  font-weight: bold;
+}
+
+.category {
+  display: block;
+  font: bold 17px/16px "Roboto Condensed",
+    sans-serif;
+  color: #f72210;
+  text-transform: uppercase;
+  padding: 8px 15px 9px;
+  background-color: #ffffffe6;
+  position: absolute;
+  bottom: 142px;
+  left: 15px;
+  z-index: 1;
+}
+
+.feature-img {
+  height: 195px;
+  background-size: contain;
+  padding-bottom: 20px;
+}
+
+.feature-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583792/gov-andrew-cuomo-press-briefing-april-2020.jpg?w=397&h=265&q=90&f=45a5935b5600750b4a55bc73eba66678");
+}
+
+.feature-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583813/las-vegas-mayor-carolyn-goodman.jpg?w=397&h=265&q=90&f=1288956f95839d515a4e899ee10d2d52");
+}
+
+.feature-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1583743/china-us-treasury-stimulus-check.jpg?w=397&h=265&q=90&f=c0ff2c520ba00834323f06b0160c039a");
+}
+
+.feature-img-4 {
+  background-image: url("https://d.newsweek.com/en/full/1583786/trump-white-house.jpg?w=397&h=265&q=90&f=548942dde9509e22fbb23bb3406ae59e");
+}
+
+.feature-img-5 {
+  background-image: url("https://d.newsweek.com/en/full/1583616/mark-zuckerberg.jpg?w=397&h=265&l=0&t=0&q=90&f=27af46117b473388c86e609283016d9b");
 }
 
 .subscribe-block {
