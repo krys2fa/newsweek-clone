@@ -206,6 +206,12 @@ nav {
   padding-bottom: 20px;
 }
 
+.editor-heading {
+  color: #f72210;
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .editors-pic-1 {
   background-image: url("https://d.newsweek.com/en/full/1583723/prison.jpg?w=397&h=295&f=e9f728d5878d2e7f2fa202ad2a2083e7");
 }
