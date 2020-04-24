@@ -100,8 +100,8 @@
   }
 
   .hero-tag {
-        top: 88px;
-        font-size: 12px;
+    top: 88px;
+    font-size: 12px;
   }
 
   .editor-img {
@@ -215,5 +215,13 @@
 
   .editor-tag {
     top: 90px;
+  }
+
+  .insights {
+    display: block;
+  }
+
+  .insights-tag {
+    color: #4d4dee;
   }
 }
