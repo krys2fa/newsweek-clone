@@ -12,16 +12,13 @@ a {
 h3 {
   font-size: 20px;
   line-height: 20px;
+  font-weight: bold;
 }
 
 h6 {
   color: #f72210;
   font-size: 16px;
   font-weight: 700;
-}
-
-h3 {
-  font-weight: bold;
 }
 
 .hide {
@@ -162,7 +159,6 @@ nav {
 
 .top-story {
   margin-bottom: 20px;
-  ;
 }
 
 .feature-img {
@@ -198,7 +194,8 @@ nav {
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%;
-  font: bold 14px/40px "Roboto Condensed",
+  font:
+    bold 14px/40px "Roboto Condensed",
     sans-serif;
   text-align: center;
   margin: 14px auto 18px;
@@ -245,7 +242,6 @@ nav {
 
 .heroes {
   margin-top: 20px;
-  ;
 }
 
 .hero-title {
@@ -337,11 +333,11 @@ nav {
 }
 
 .image-red-top {
-  border-top: 4px solid #ff0000;
+  border-top: 4px solid #f00;
 }
 
 .image-blue-top {
-  border-top: 4px solid #0000ff;
+  border-top: 4px solid #00f;
 }
 
 .debate {
@@ -385,12 +381,64 @@ nav {
   background-position: 85% 100%, 30% 15%;
 }
 
-.magazines {
-  margin-top: 20px;
+/* .magazine-heading {
+  margin: 20px;
+} */
+
+.mag-background {
+  background-color: #f4f5f6;
 }
 
-.heading {
-  margin: 0 auto;
+.mag-pic-1 {
+  background-image: url("https://d.newsweek.com/en/full/1582550/fe-whitmer-q.jpg?w=466&h=311&l=40&t=43&q=90&f=3a04771e849065ff652402c4dd0333ac");
+}
+
+.mag-pic-2 {
+  background-image: url("https://d.newsweek.com/en/full/1582382/fe-whitmer-banner.jpg?w=466&h=311&l=52&t=45&q=90&f=8e32ab6b0456788b57a6b9ebd6b281bf");
+}
+
+.mag-pic-3 {
+  background-image: url("https://d.newsweek.com/en/full/1579624/bronx-nyc-hospital-tent-coronavirus-march-2020.jpg?w=466&h=311&q=90&f=36a1e5404c7d245dc3d11e18ba778436");
+}
+
+.mag-pic-4 {
+  background-image: url("https://d.newsweek.com/en/full/1581592/cul-the-last-dance-banner.jpg?w=466&h=311&l=64&t=52&q=90&f=3d5db0a981677ca610a3170abbc9428d");
+}
+
+.mag-pic-5 {
+  background-image: url("https://d.newsweek.com/en/full/1579490/coronavirus-pandemic-covid-19-new-york.jpg?w=466&h=311&q=90&f=9dcb631881b3d1da85b177f53f0fe88c");
+}
+
+.mag-pic-6 {
+  background-image: url("https://d.newsweek.com/en/full/1581931/cul-uncharted-books-banner.jpg?w=466&h=311&q=90&f=761db87ab1263b6a0614fe17874fc744");
+}
+
+.mag-pic-7 {
+  background-image: url("https://d.newsweek.com/en/full/1583412/no-place-like-home.jpg?w=480&h=320&q=90&f=431234b94b482f2b64a875274485f6ba");
+}
+
+.mag-pic-8 {
+  background-image: url("https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=360&h=480&q=90&f=aa6329ca3fcf4bd58f2da596650d190c");
+}
+
+.label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.label-1 {
+  background-color: #f72210;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.label-2 {
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.label-2 a {
+  color: #f00;
 }
 
 .logo-icon {
