@@ -85,12 +85,32 @@
   .newsletter-text {
     text-align: left;
     border-left: none;
+    height: 270px;
   }
 
   .newsletter-img {
     background-size: cover;
     height: 270px;
     padding-top: 35px;
+  }
+
+  .hero-img {
+    width: 117px;
+    height: 117px;
+  }
+
+  .hero-tag {
+        top: 88px;
+        font-size: 12px;
+  }
+
+  .editor-img {
+    height: 120px;
+    background-size: contain;
+  }
+
+  .editor-tag {
+    top: 82px;
   }
 }
 
@@ -178,5 +198,22 @@
       0% 15%;
     padding: 0;
     margin: 0;
+  }
+
+  .hero-img {
+    width: 100px;
+    height: 117px;
+    background-size: contain;
+  }
+
+  .hero-tag {
+    margin: auto 0;
+    padding: 10px 4px;
+    top: 27px;
+    font-size: 10px;
+  }
+
+  .editor-tag {
+    top: 90px;
   }
 }

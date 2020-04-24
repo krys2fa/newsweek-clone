@@ -161,6 +161,7 @@ nav {
   margin-bottom: 20px;
 }
 
+.editor-img,
 .feature-img {
   height: 195px;
   background-size: contain;
@@ -244,17 +245,11 @@ nav {
   background-image: url("https://d.newsweek.com/en/full/1583555/covid19-coronavirus-conjunctivitis-getty-stock.jpg?w=397&h=295&f=8e26bcb70caf8a68460a053486f42980");
 }
 
-.heroes {
-  margin-top: 20px;
-}
-
 .hero-title {
   font-weight: bold;
 }
 
 .hero-img {
-  /* width: 117px;
-  height: 117px; */
   width: 290px;
   height: 290px;
   background-size: contain;
@@ -268,6 +263,7 @@ nav {
   font-weight: normal;
   background-color: #b5bcc4;
   top: 260px;
+  width: 80%
 }
 
 .info {
