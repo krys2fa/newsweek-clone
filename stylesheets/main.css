@@ -194,9 +194,7 @@ nav {
   background-color: #000;
   color: #d6d6d6;
   border-radius: 50%;
-  font:
-    bold 14px/40px "Roboto Condensed",
-    sans-serif;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
   text-align: center;
   margin: 14px auto 18px;
 }
@@ -342,7 +340,6 @@ nav {
 
 .debate {
   border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
 }
 
 .debator {
@@ -380,10 +377,6 @@ nav {
   background-repeat: no-repeat;
   background-position: 85% 100%, 30% 15%;
 }
-
-/* .magazine-heading {
-  margin: 20px;
-} */
 
 .mag-background {
   background-color: #f4f5f6;
