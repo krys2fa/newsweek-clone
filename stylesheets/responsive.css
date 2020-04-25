@@ -277,6 +277,10 @@
     margin-left: 170px;
     margin-right: 170px;
   }
+  
+  .right {
+    margin: 40px 0 0 185px;
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -289,5 +293,9 @@
   .main-content {
     margin-left: 710px;
     margin-right: 710px;
+  }
+
+  .right {
+    margin: 40px 0 0 190px;
   }
 }
