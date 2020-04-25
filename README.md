@@ -16,7 +16,7 @@ In this Microverse project, I was required to make use of Bootstrap CSS classes 
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/krys2fa/newsweek-clone/f3a92a4a08cbd33a6feac2970e70b0fd923cd889/index.html)
+[Live Demo Link](https://rawcdn.githack.com/krys2fa/newsweek-clone/243d4b551cbd4cb9afc5927d3c5fddabd051758e/index.html)
 
 ## Getting Started
 
