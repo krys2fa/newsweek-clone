@@ -7,6 +7,11 @@
     margin: 0 30px;
   }
 
+  .main-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
   .weather-info {
     display: flex;
     margin-right: 100px;
@@ -107,7 +112,7 @@
   .hero-tag {
     margin: auto 0;
     padding: 10px 0 10px 2px;
-    top: 16px;
+    top: 43px;
     font-size: 10px;
   }
 
@@ -267,6 +272,11 @@
   .large-screen {
     margin: 0 140px;
   }
+
+  .main-content {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
 }
 
 @media screen and (min-width: 2560px) {
@@ -274,5 +284,10 @@
   .main-menu,
   .large-screen {
     margin: 0 690px;
+  }
+
+  .main-content {
+    margin-left: 710px;
+    margin-right: 710px;
   }
 }

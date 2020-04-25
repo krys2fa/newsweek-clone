@@ -145,6 +145,11 @@ main {
   font-weight: bold;
 }
 
+.main-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .title-color {
   color: #03030366;
 }
