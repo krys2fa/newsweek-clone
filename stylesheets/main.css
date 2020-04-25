@@ -120,6 +120,7 @@ main {
 .signin,
 .subscribe {
   font-size: 14px;
+  font-weight: bold;
 }
 
 .signin {
@@ -133,12 +134,12 @@ main {
   text-align: center;
   color: #999;
   padding-top: 6px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .actions {
   display: grid;
-  grid-template-columns: 40% 40% 20%;
+  grid-template-columns: 40% 50% 10%;
   margin: 0 auto;
 }
 
