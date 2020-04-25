@@ -124,9 +124,35 @@
   }
 
   .large-screen {
-    display: block;
+    display: grid;
     height: 100px;
     padding: 20px 10px 15px;
+    grid-template-columns: repeat(3, 33.3%);
+  }
+
+  .bg-color-red {
+    background-color: #f72210;
+  }
+
+  .weather-info {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    margin-left: 10px;
+  }
+
+  .right {
+    margin: 40px 0 0 120px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .bar {
+    margin-top: 100px;
   }
 
   .bar,
@@ -139,14 +165,10 @@
     height: 85px;
   }
 
-  .weather-info {
-    margin: 0;
-  }
-
   .middle svg {
     fill: #fff;
-    height: 45px;
-    margin: 5px 0 0 130px;
+    height: 60px;
+    margin: 5px 0 0 -36px;
   }
 
   .subscribe {
