@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  /* background-color: blue; */
 }
 
 a {
@@ -118,6 +119,10 @@ nav {
   text-align: center;
   color: #999;
   padding-top: 6px;
+}
+
+.menu-list a {
+  font-weight: bold;
 }
 
 .title-color {
