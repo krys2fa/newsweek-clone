@@ -34,6 +34,10 @@
     display: flex;
   }
 
+  .menu-bar {
+    margin-left: 58px;
+  }
+  
   .subscribe-body {
     text-align: left;
   }

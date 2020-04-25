@@ -139,6 +139,7 @@ main {
 .actions {
   display: grid;
   grid-template-columns: 40% 40% 20%;
+  margin: 0 auto;
 }
 
 .menu-list a {
