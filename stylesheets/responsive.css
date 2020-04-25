@@ -105,17 +105,29 @@
   }
 
   .hero-tag {
-    top: 88px;
-    font-size: 12px;
+    margin: auto 0;
+    padding: 10px 0 10px 2px;
+    top: 16px;
+    font-size: 10px;
+  }
+
+  .editor-tag {
+    top: 90px;
   }
 
   .editor-img {
     height: 120px;
   }
 
-  .editor-tag {
-    top: 82px;
+  .first-editors-pic {
+    height: 200px;
+    margin-top: 20px;
   }
+
+  .first-editors-tag {
+    top: 170px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -225,7 +237,7 @@
   }
 
   .editor-tag {
-    top: 90px;
+    top: 165px;
   }
 
   .insights {
@@ -235,9 +247,23 @@
   .insights-tag {
     color: #4d4dee;
   }
+
+  .editor-img {
+    height: 195px;
+  }
+
+  .first-editors-pic {
+    height: 270px;
+    margin-top:20px;
+  }
+
+  .first-editors-tag {
+    top: 240px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+
   .bar,
   .main-menu,
   .large-screen {
@@ -246,6 +272,7 @@
 }
 
 @media screen and (min-width: 2560px) {
+
   .bar,
   .main-menu,
   .large-screen {

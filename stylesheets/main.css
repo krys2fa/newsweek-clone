@@ -270,6 +270,14 @@ main {
   background-image: url("https://d.newsweek.com/en/full/1583555/covid19-coronavirus-conjunctivitis-getty-stock.jpg?w=397&h=295&f=8e26bcb70caf8a68460a053486f42980");
 }
 
+.first-editors-pic {
+  height: 385px;
+}
+
+.first-editors-tag {
+  top: 355px;
+}
+
 .hero-title {
   font-weight: bold;
 }
