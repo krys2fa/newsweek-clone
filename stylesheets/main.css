@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
-  /* background-color: blue; */
 }
 
 a {
@@ -169,9 +168,9 @@ nav {
 .editor-img,
 .feature-img {
   height: 195px;
-  background-size: contain;
   background-repeat: no-repeat;
   padding-bottom: 20px;
+  background-size: 100%;
 }
 
 .feature-img-1 {
