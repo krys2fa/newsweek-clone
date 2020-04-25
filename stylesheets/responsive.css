@@ -1,0 +1,301 @@
+@media screen and (min-width: 768px) {
+  nav {
+    grid-template-columns: 50% 50%;
+  }
+
+  .small-screen {
+    margin: 0 30px;
+  }
+
+  .main-content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .weather-info {
+    display: flex;
+    margin-right: 100px;
+  }
+
+  .subscribe span {
+    display: block;
+  }
+
+  .signin,
+  .subscribe a {
+    font-size: 18px;
+  }
+
+  .subscribe-mobile {
+    display: none;
+  }
+
+  .subscribe-tablet {
+    display: block;
+  }
+
+  .subscribe-block {
+    width: 100%;
+    display: flex;
+  }
+
+  .menu-bar {
+    margin-left: 40px;
+  }
+
+  .subscribe-body {
+    text-align: left;
+  }
+
+  .subscribe-body a {
+    margin-left: 20px;
+  }
+
+  .newsletter-text,
+  .newsletter-img {
+    height: 210px;
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #eee;
+  }
+
+  .social-icons {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .copyright {
+    margin-left: -200px;
+  }
+
+  .footer-links-edition {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer-menu {
+    color: #d9d9d9;
+    font-size: 14px;
+    padding-left: 0;
+  }
+
+  .leaf::after {
+    content: "|";
+    color: #aaa;
+    margin: 0 5px;
+  }
+
+  .footer-links-edition li {
+    margin-right: 0;
+  }
+
+  .newsletter-text {
+    text-align: left;
+    border-left: none;
+    height: 270px;
+  }
+
+  .newsletter-img {
+    background-size: cover;
+    height: 270px;
+    padding-top: 35px;
+  }
+
+  .hero-img {
+    height: 117px;
+  }
+
+  .hero-tag {
+    margin: auto 0;
+    padding: 10px 0 10px 2px;
+    top: 43px;
+    font-size: 10px;
+  }
+
+  .editor-tag {
+    top: 90px;
+  }
+
+  .editor-img {
+    height: 120px;
+  }
+
+  .first-editors-pic {
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .first-editors-tag {
+    top: 170px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .small-screen {
+    display: none;
+  }
+
+  .large-screen {
+    display: grid;
+    height: 100px;
+    padding: 20px 10px 15px;
+    grid-template-columns: repeat(3, 33.3%);
+  }
+
+  .bg-color-red {
+    background-color: #f72210;
+  }
+
+  .weather-info {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .left {
+    margin-left: 10px;
+  }
+
+  .right {
+    margin: 40px 0 0 120px;
+  }
+
+  .subscribe {
+    margin-left: 12px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .bar {
+    margin-top: 100px;
+    display: block;
+    height: 15px;
+  }
+
+  .bar,
+  .main-menu,
+  .large-screen {
+    margin: 0 30px;
+  }
+
+  .logo {
+    height: 85px;
+  }
+
+  .middle svg {
+    fill: #fff;
+    height: 60px;
+    margin: 5px 0 0 -36px;
+  }
+
+  .main-menu {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .menu-list {
+    height: 24px;
+    list-style: none;
+    padding: 5px;
+    width: 85%;
+  }
+
+  .menu-list a {
+    color: #000;
+  }
+
+  .line-after::after {
+    content: " | ";
+    margin-left: 10px;
+  }
+
+  .copyright {
+    margin-left: -420px;
+  }
+
+  .subscribe-img {
+    background-position:
+      700% 100%,
+      0% 15%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-img {
+    width: 100px;
+    height: 117px;
+    background-size: contain;
+  }
+
+  .hero-tag {
+    margin: auto 0;
+    padding: 10px 4px;
+    top: 27px;
+    font-size: 10px;
+  }
+
+  .editor-tag {
+    top: 165px;
+  }
+
+  .insights {
+    display: block;
+  }
+
+  .insights-tag {
+    color: #4d4dee;
+  }
+
+  .editor-img {
+    height: 195px;
+  }
+
+  .first-editors-pic {
+    height: 270px;
+    margin-top: 20px;
+  }
+
+  .first-editors-tag {
+    top: 240px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bar,
+  .main-menu,
+  .large-screen {
+    margin: 0 140px;
+  }
+
+  .main-content {
+    margin-left: 170px;
+    margin-right: 170px;
+  }
+
+  .right {
+    margin: 40px 0 0 185px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .bar,
+  .main-menu,
+  .large-screen {
+    margin: 0 690px;
+  }
+
+  .main-content {
+    margin-left: 710px;
+    margin-right: 710px;
+  }
+
+  .right {
+    margin: 40px 0 0 190px;
+  }
+}

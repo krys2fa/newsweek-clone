@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsweek Clone</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/responsive.css">
+  <link rel="icon" type="image/png" href="https://g.newsweek.com/themes/newsweek/favicons/favicon-32x32.png"
+    sizes="32x32">
+</head>
+
+<body>
+  <nav class="grid small-screen align-baseline fixed-top">
+    <div class="flex-h ">
+      <div class="logo align-center">
+        <a class="" href="#">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+            <g>
+              <path class="st0"
+                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+              </path>
+            </g>
+          </svg>
+
+        </a>
+      </div>
+
+      <div class="weather-info align-center hide">
+        <img class="weather-icon" src="https://g.newsweek.com/img/weather/34.png" alt="Fair">
+        <span class="weather-text">&nbsp; 30° Accra, GH </span> &nbsp;
+        <img src="https://g.newsweek.com/img/weather/ic-white-arrow.png" alt="arrow">
+      </div>
+    </div>
+
+    <div class="actions align-center">
+      <div class="signin text-center">SIGN IN</div>
+      <div class="subscribe text-center">
+        <a href="#" class="subscribe-mobile">
+          SUBSCRIBE
+        </a>
+
+        <a href="#" class="subscribe-tablet text-center hide">
+          SUBSCRIBE >
+        </a>
+      </div>
+      <div class="menu-bar">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+  </nav>
+
+  <nav class="large-screen">
+    <div class="large-screen fixed-top bg-color-red">
+      <div class="left">
+        <div class="weather-info align-center">
+          <img class="weather-icon" src="https://g.newsweek.com/img/weather/34.png" alt="Fair">
+          <span class="weather-text">&nbsp; 30° Accra, GH </span> &nbsp;
+          <img src="https://g.newsweek.com/img/weather/ic-white-arrow.png" alt="arrow">
+        </div>
+
+        <div>
+          Tue, Apr 21, 2020
+        </div>
+
+      </div>
+
+      <div class="middle">
+        <a class="" href="#">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+            <g>
+              <path class="st0"
+                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+              </path>
+            </g>
+          </svg>
+
+        </a>
+      </div>
+
+      <div class="flex-h right">
+        <div class="signin text-center">SIGN IN</div>
+        <div class="subscribe text-center">
+          <a href="#" class="subscribe-mobile">
+            SUBSCRIBE
+          </a>
+
+          <a href="#" class="subscribe-tablet text-center hide">
+            SUBSCRIBE >
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <div class="bar"></div>
+
+  <div class="main-menu flex-h">
+    <ul class="flex-h menu-list space-between">
+      <li class="line-after"><a href="#">U.S</a></li>
+      <li class="line-after"><a href="#"> World</a> </li>
+      <li class="line-after"><a href="#"> Business</a> </li>
+      <li class="line-after"><a href="#"> Tech & Science</a></li>
+      <li class="line-after"><a href="#"> Culture</a> </li>
+      <li class="line-after"><a href="#"> Newsgeek</a> </li>
+      <li class="line-after"><a href="#"> Sports</a> </li>
+      <li class="line-after"><a href="#"> Health</a> </li>
+      <li class="line-after"><a href="#"> The Debate</a></li>
+      <li class="line-after"><a href="#"> Vantage</a> </li>
+      <li><a href="#"> Weather</a> </li>
+
+    </ul>
+
+    <div>Search &nbsp; <i class="fas fa-search"></i></div>
+  </div>
+
+  <main class="main-content">
+
+    <div class="row">
+
+      <section class="featured col-sm-12 col-md-6 col-lg-4">
+        <h6 class="title-color">FEATURED STORIES</h6>
+
+        <div class="featured">
+          <div class="feature-img feature-img-1 flex-h">
+            <div class="tag">U.S.</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-2 flex-h">
+            <div class="tag">WORLD</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-3 flex-h">
+            <div class="tag">TECH & SCIENCE</div>
+          </div>
+
+          <h3>
+            <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+          </h3>
+
+          <div class="summary">
+            The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+            program. Who will buy it?
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-4 flex-h">
+            <div class="tag">U.S.</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-5 flex-h">
+            <div class="tag">TECH & SCIENCE</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-4 flex-h">
+            <div class="tag">U.S.</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-2 flex-h">
+            <div class="tag">WORLD</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-4 flex-h">
+            <div class="tag">U.S.</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-5 flex-h">
+            <div class="tag">TECH & SCIENCE</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+        <div class="featured">
+          <div class="feature-img feature-img-2 flex-h">
+            <div class="tag">WORLD</div>
+          </div>
+
+          <h3>
+            <a href="#">Governors Could Get $500 Billion in Coronavirus Aid—If Bill Passes Congress</a>
+          </h3>
+
+          <div class="summary">
+            The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments respond
+            to the coronavirus pandemic.
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="col-sm-12 col-md-6 col-lg-4">
+
+        <section class="top-story">
+          <h6 class="title-color">TOP STORY</h6>
+          <div class="top-story-img flex-h">
+            <div class="tag top-story-tag">World</div>
+          </div>
+          <h6>
+            <a href="#">Iran Warns
+              Donald Trump It Will 'Defend Its Territory' After Navy Threat</a>
+          </h6>
+
+          <div class="summary">In the midst of a global coronavirus pandemic when all attentions worldwide is to
+            combat this menace, the question is what the U.S. military is doing in Persian Gulf waters, 7,000 miles
+            from home," an Iranian diplomat told Newsweek.</div>
+        </section>
+
+        <article class="content">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+          </h6>
+
+          <div class="summary">
+            The Persian Gulf has featured frictions throughout the U.S. and Iran's four-decade
+            feud but the rivalry has taken on a new, more violent dimension in recent months.
+          </div>
+        </article>
+
+        <section class="heroes ">
+          <h6 class="title-color mt-3">HEROES OF THE PANDEMIC</h6>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img hero-img-1 flex-h">
+                <div class="tag hero-tag">Pandemic Heroes</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  Teenagers Shop for the Vulnerable During Coronavirus Emergency
+                </div>
+                <div class="summary">
+                  "I almost cried," said a user of Six Feet Supplies, a charity started by teenagers who shop for those
+                  susceptible to COVID-19.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img hero-img-2 flex-h">
+                <div class="tag hero-tag pl-0.5 pr-0.5">Pandemic Heroes</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  Organizer Helps Rebuild New York's Filipino Community Hit by COVID-19
+                </div>
+                <div class="summary">
+                  "We're not selling anything," Sacco said Tuesday. "Every single bit of this is donation-only or
+                  nothing."
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img hero-img-3 flex-h">
+                <div class="tag hero-tag">Pandemic Heroes</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  Tennessee Group Makes Coronavirus Face Masks for Local, International Use
+                </div>
+                <div class="summary">
+                  "We're not selling anything," Sacco said Tuesday. "Every single bit of this is donation-only or
+                  nothing."
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h6 class="title-color">CULTURE & TRAVEL</h6>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img cnt-img-1 flex-h">
+                <div class="tag hero-tag">Jane Goodal</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  A Conversation With Jane Goodall on the Pandemic and Hope for the Planet
+                </div>
+                <div class="summary">
+                  Goodall talks to Newsweek about the pandemic, her new documentary and the most important message she
+                  hopes her life's work leaves behind.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img cnt-img-2 flex-h">
+                <div class="tag hero-tag">Earth Day</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  13 Spectacular Photos of the Planet From the Lens of a Travel Photographer </div>
+                <div class="summary">
+                  As we celebrate the 50th anniversary of Earth Day, a travel photographer looks back on her favorite
+                  photos she's taken around the world.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+              <div class="hero-img cnt-img-3 flex-h">
+                <div class="tag hero-tag">Travel</div>
+              </div>
+              <div class="info">
+                <div class="hero-title">
+                  These Underwater Art Exhibits Are Helping to Save Our Oceans </div>
+                <div class="summary">
+                  British eco-artist Jason deCaires Taylor creates eerie undersea worlds that blend sculpture and marine
+                  life, creating havens for coral to regenerate and new ecosystems to thrive.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <h6 class="title-color">MORE STORIES</h6>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+            </h6>
+
+            <div class="summary">
+              The Persian Gulf has featured frictions throughout the U.S. and Iran's four-decade
+              feud but the rivalry has taken on a new, more violent dimension in recent months.
+            </div>
+          </article>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584054/coronavirus-us.jpg?w=95&h=95&f=1c5e728cf0f997ed011c8c6bf368dd91"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">U.S. States That Have Flattened the Coronavirus Curve </a>
+            </h6>
+
+            <div class="summary">Amid the coronavirus pandemic in the U.S., a number of different states have already
+              flattened the curve.
+            </div>
+          </article>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584132/elizabeth-warren.jpg?w=95&h=95&f=ecb936594c709d0fd9fa05fd541c6b86"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Elizabeth Warren Announces Oldest Brother's Death From Coronavirus</a>
+            </h6>
+
+            <div class="summary">The Massachusetts senator confirmed her oldest brother, Don Reed, passed away from the
+              new coronavirus on Tuesday night.
+            </div>
+          </article>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1572476/tua-tagovailoa-alabama.jpg?w=95&h=95&f=ac9cc4d8037e504ffb99376343822ccf"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">NFL Draft 2020: Latest Odds and Prop Bets for the First Round</a>
+            </h6>
+
+            <div class="summary">Joe Burrow and Chase Young are almost guaranteed to be the first two picks, but
+              bookmakers are uncertain as to who will follow the pair off the board.
+            </div>
+          </article>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584073/trump-fauci-4-13-briefing.jpg?w=95&h=95&f=8399e486abced3adfb085d3a1500d8bf"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Americans Trust Fauci, Governors Over Trump on Coronavirus, Polls Show</a>
+            </h6>
+
+            <div class="summary">A series of recent polls found that most Americans trust their governors far more than
+              President Trump when it comes to whether to retain social distancing measures, but National Institute for
+              Allergy and Infectious Disease Director Dr. Anthony Fauci is a more trusted figure than even both of them.
+            </div>
+          </article>
+
+          <article class="content">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+            </h6>
+
+            <div class="summary">
+              The Persian Gulf has featured frictions throughout the U.S. and Iran's four-decade
+              feud but the rivalry has taken on a new, more violent dimension in recent months.
+            </div>
+          </article>
+
+        </section>
+
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4">
+
+        <section class="opinions">
+          <h6 class="title-color">OPINION</h6>
+
+          <div class="opinion flex-h">
+            <div class="headshot">
+              <img
+                src="https://d.newsweek.com/en/full/1568478/bonnie-kristian.png?w=63&h=63&f=ca92d03f69e06f6dd117bf04cef90475"
+                alt="">
+            </div>
+            <div class="opinion-info">
+              <a href="#">There Are Three Paths Forward for U.S.-Iran Relations. Only One Averts War</a>
+              <div class="byline">
+                By Bonnie Kristian
+              </div>
+            </div>
+          </div>
+
+          <div class="opinion flex-h">
+            <div class="headshot">
+              <img
+                src="https://d.newsweek.com/en/full/106462/robert-walker.png?w=63&h=63&f=32ea83f1b038fbd9ed3672a1db3ffff0"
+                alt="">
+            </div>
+            <div class="opinion-info">
+              <a href="#">Saudi Arabia Executed My Husband a Year Ago Today. They Hold His Body Still</a>
+              <div class="byline">
+                By
+                Zakia Albakheet
+              </div>
+            </div>
+          </div>
+
+          <div class="opinion flex-h">
+            <div class="headshot">
+              <img
+                src="https://d.newsweek.com/en/full/1583793/new-latthivongskorn-denisse-rojas.png?w=63&h=63&f=0e09c04341b360cd253059505ec1c5bb"
+                alt="">
+            </div>
+            <div class="opinion-info">
+              <a href="#">We're Medical Workers and DACA Recipients. It's Our Duty to Protect America</a>
+              <div class="byline">
+                By
+                New Latthivongskorn and Denisse Rojas
+              </div>
+            </div>
+          </div>
+
+          <div class="opinion flex-h">
+            <div class="headshot">
+              <img
+                src="https://d.newsweek.com/en/full/106462/robert-walker.png?w=63&h=63&f=32ea83f1b038fbd9ed3672a1db3ffff0"
+                alt="">
+            </div>
+            <div class="opinion-info">
+              <a href="#">We're Moving Mountains to Fight Coronavirus. Why Not Climate Change?</a>
+              <div class="byline">
+                By
+                Robert Walker
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="the-debate">
+          <h6 class="title-color">THE DEBATE</h6>
+
+          <article class="debate pb-3 clearfix">
+            <div class="image-red-top">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1582305/trump-pence.jpg?w=95&h=95&f=aa2c025d06da441a82387c13a24756c7"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Trump's Right. The WHO Is Not Fit for Purpose</a>
+            </h6>
+
+          </article>
+
+          <div class="flex-h space-between">
+            <div class="debator">
+              <span>
+                BY
+                <a href="#">NIGEL FARAGE</a>
+              </span>
+            </div>
+
+            <div>
+              <a href="#">
+                <img class="headshot"
+                  src="https://d.newsweek.com/en/full/1563625/nigel-farage.png?w=150&h=150&f=2ae37ecc11a3397b627c243707faa3cb"
+                  alt="">
+              </a>
+            </div>
+          </div>
+
+          <div class="versus pb-3">VS</div>
+
+          <article class="debate pb-3 clearfix">
+            <div class="image-blue-top">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1582345/donald-trump.jpg?w=95&h=95&f=e0440aa96094bb88d352743ed52efdc1"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Defunding the WHO Mid-Pandemic Is Lunacy</a>
+            </h6>
+
+          </article>
+
+          <div class="flex-h space-between">
+            <div class="debator">
+              <span>
+                BY
+                <a href="#">JAMIE METZL</a>
+              </span>
+            </div>
+
+            <div>
+              <a href="#">
+                <img class="headshot"
+                  src="https://d.newsweek.com/en/full/1582307/jamie-metzl.png?w=150&h=150&f=6bb1bbea6ea4958f2df92e02d62be0b1"
+                  alt="">
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="latest-news">
+          <h6 class="title-color">LATEST NEWS</h6>
+
+          <article class="content clearfix">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584157/fish-swimming-through-coral.jpg?w=95&h=95&f=36865d5ea10145222c9c8767bb4ccd1f"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Levels of Ocean Biodiversity Have Barely Changed for Millions of Years</a>
+            </h6>
+
+          </article>
+
+          <article class="content clearfix">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584193/coronavirus-us.jpg?w=95&h=95&f=4d74761abac7ae128357167158e8ae15"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">D.C. Mayor to Hire Hundreds For Coronavirus Contact Tracing Force</a>
+            </h6>
+
+          </article>
+
+          <article class="content clearfix">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584194/new-york-stock-exchange.jpg?w=95&h=95&f=7479ef09d9d466a9fe6fb9418cc0bb20"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">More People Have Filed for Unemployment Than Live in 10 Largest U.S. Cities</a>
+            </h6>
+
+          </article>
+
+          <article class="content clearfix">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+            </h6>
+
+          </article>
+
+          <article class="content clearfix">
+            <div class="image">
+              <a href="#">
+                <img
+                  src="https://d.newsweek.com/en/full/1584196/grimes-elon-musk.jpg?w=95&h=95&f=3d1ba8c1344fa70c70ba0f213280af1d"
+                  alt="" class="thumbnail">
+              </a>
+            </div>
+
+            <h6>
+              <a href="#">Here's Why People Think Elon Musk and Grimes Named Their Child Influenza</a>
+            </h6>
+
+          </article>
+
+        </section>
+
+        <div class="insights mt-5 hide">
+
+          <article class="insight mt-5">
+            <div class="featured">
+              <div class="feature-img editors-pic-7 flex-h">
+                <div class="tag insights-tag">SPONSORED INSIGHT</div>
+              </div>
+
+              <h3>
+                <a href="#">How Can a Good Business Education Benefit You?</a>
+              </h3>
+
+              <div class="summary">
+                The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+                program. Who will buy it?
+              </div>
+
+            </div>
+          </article>
+
+          <article class="insight mt-5">
+            <div class="featured">
+              <div class="feature-img editors-pic-2 flex-h">
+                <div class="tag insights-tag">SPONSORED INSIGHT</div>
+              </div>
+
+              <h3>
+                <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+              </h3>
+
+              <div class="summary">
+                The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments
+                respond
+                to the coronavirus pandemic.
+              </div>
+
+            </div>
+          </article>
+
+          <article class="insight mt-5">
+            <div class="featured">
+              <div class="feature-img editors-pic-1 flex-h">
+                <div class="tag insights-tag">SPONSORED INSIGHT</div>
+              </div>
+
+              <h3>
+                <a href="#">Afghan Refugee Gives Out Food Vouchers to Those Hit by Coronavirus Crisis</a>
+              </h3>
+
+              <div class="summary">
+                The Cassidy-Menendez proposal would create a $500 billion fund to help state and local governments
+                respond
+                to the coronavirus pandemic.
+              </div>
+
+            </div>
+          </article>
+
+          <article class="insight mt-5">
+            <div class="featured">
+              <div class="feature-img editors-pic-8 flex-h">
+                <div class="tag insights-tag">SPONSORED INSIGHT</div>
+              </div>
+
+              <h3>
+                <a href="#">What Is Your Accounting And Finance Team Missing?</a>
+              </h3>
+
+              <div class="summary">
+                Have you ever wanted more from your accounting and finance professionals? These three letters can help.
+              </div>
+
+            </div>
+          </article>
+
+          <article class="insight mt-5">
+            <div class="featured">
+              <div class="feature-img editors-pic-5 flex-h">
+                <div class="tag insights-tag">SPONSORED INSIGHT</div>
+              </div>
+
+              <h3>
+                <a href="#">Who Leads the Field in Dependency Treatment in 2020?</a>
+              </h3>
+
+              <div class="summary">
+                When seeking guidance on beating an addiction, there are many things to consider. Where do you go to
+                ensure that you will not just turn the corner, but keep carrying on down the right road for the rest of
+                your life? Find out more.
+              </div>
+
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="magazine">
+
+      <div class="m-3">
+        <div class="flex-h center">
+          <span class="logo-icon"></span>
+          <h3>IN THE MAGAZINE</h3>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="mt-1.2 col-sm-12 col-md-3">
+
+          <div class="mag-background">
+            <div class="">
+              <div class="editor-img mag-pic-8 first-editors-pic">
+                <span class="tag first-editors-tag">MAY 01 ISSUE</span>
+              </div>
+            </div>
+
+            <h3 class="ml-1 p-2"><a href="#">SEE ALL FEATURES ></a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-2">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                COVER
+              </span>
+
+              <span class="label-2">
+                <a href="#">POLITICS</a>
+              </span>
+            </div>
+
+            <h3><a href="#">
+                Michigan Governor Gretchen Whitmer Talks Trump, VP Rumors And More
+              </a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-1">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                COVER
+              </span>
+
+              <span class="label-2">
+                <a href="#">POLITICS</a>
+              </span>
+            </div>
+
+            <h3><a href="#">COVID-19
+                Could Claim 100,000 More Lives if Jail Populations Stay The Same</a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-4">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                DOWNTIME
+              </span>
+
+              <span class="label-2">
+                <a href="#">CULTURE</a>
+              </span>
+            </div>
+
+            <h3><a href="#">Ten Surprising Things We Learned from the Michael Jordan ESPN Documentary</a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-3">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                FEATURES
+              </span>
+
+              <span class="label-2">
+                <a href="#">HEALTH</a>
+              </span>
+            </div>
+
+            <h3><a href="#">How Doctors are Saving Coronavirus Patients with Innovative New Techniques</a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-5">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                PERISCOPE
+              </span>
+
+              <span class="label-2">
+                <a href="#">CULTURE</a>
+              </span>
+            </div>
+
+            <h3><a href="#">COVID-19
+                Could Claim 100,000 More Lives if Jail Populations Stay The Same</a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-6">
+              </div>
+            </div>
+
+            <div class="label flex-h">
+              <span class="label-1">
+                DOWNTIME
+              </span>
+
+              <span class="label-2">
+                <a href="#">CULTURE</a>
+              </span>
+            </div>
+
+            <h3><a href="#">10 Books That Will Transport You All Around the World</a>
+            </h3>
+
+          </div>
+        </div>
+
+        <div class="magazines col-sm-12 col-md-3">
+
+          <div class="editor-pick">
+            <div class="editors-pic">
+              <div class="editor-img mag-pic-7">
+                <!-- <div class="tag top-story-tag">IN FOCUS</div> -->
+              </div>
+            </div>
+
+            <h3 class="mt-4"><a href="#">NO PLACE LIKE HOME</a>
+            </h3>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="editor-picks">
+
+      <div class="m-3">
+        <div class="flex-h center">
+          <span class="logo-icon"></span>
+          <h3>EDITOR'S PICK </h3>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-1 flex-h">
+              <div class="tag editor-tag">ESSAYS</div>
+            </div>
+
+            <h3>
+              <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+            </h3>
+
+            <div class="summary">
+              The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+              program. Who will buy it?
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-2 flex-h">
+              <div class="tag editor-tag">TECH & SCIENCE</div>
+            </div>
+
+            <h3>
+              <a href="#">Afghan Refugee Gives Out Food Vouchers to Those Hit by Coronavirus Crisis</a>
+            </h3>
+
+            <div class="summary">
+              Nebraska small business owner Nemat Azizi helps out-of-work restaurant and salon workers with free $150
+              grocery vouchers.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-3 flex-h">
+              <div class="tag editor-tag">U.S.</div>
+            </div>
+
+            <h3>
+              <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+            </h3>
+
+            <div class="summary">
+              The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+              program. Who will buy it?
+            </div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-4 flex-h">
+              <div class="tag editor-tag">NEWS</div>
+            </div>
+
+            <h3>
+              <a href="#">Prince Louis Birthday Photo Shows Rainbow of Hope Painted With Mother</a>
+            </h3>
+
+            <div class="summary">Prince Louis turns two today and mother Kate Middleton has released new images of him
+              covered in paint, creating a rainbow picture as part of a trend aimed at spreading hope.</div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-5 flex-h">
+              <div class="tag editor-tag">U.S.</div>
+            </div>
+
+            <h3>
+              <a href="#">Texas Woman Donates Most of Stimulus Check After Seeing Lines at Food Bank</a>
+            </h3>
+
+            <div class="summary">
+              Toi Cudworth donated $950 to the San Antonio Food Bank and also bought groceries for a neighbor who was
+              recently laid off.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-6 flex-h">
+              <div class="tag editor-tag">NEWS</div>
+            </div>
+
+            <h3>
+              <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+            </h3>
+
+            <div class="summary">
+              The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+              program. Who will buy it?
+            </div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-8 flex-h">
+              <div class="tag editor-tag">CULTURE</div>
+            </div>
+
+            <h3>
+              <a href="#">Test Shows 21 Percent Of New York City Residents Have COVID-19 Antibodies</a>
+            </h3>
+
+            <div class="summary">
+              The highest percentage of those who tested positive for antibodies were found in New York City, where the
+              rate was 21 percent, and Long Island at 16.7 percent, and 11.7 percent for the suburbs of Rockland and
+              Westchester.
+            </div>
+
+          </div>
+        </div>
+
+        <div class="editor-pick col-ms-12 col-md-3">
+          <div class="featured">
+            <div class="editor-img editors-pic-7 flex-h">
+              <div class="tag editor-tag">TECH & SCIENCE</div>
+            </div>
+
+            <h3>
+              <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+            </h3>
+
+            <div class="summary">
+              The U.S. Treasury will issue trillions of dollars in new debt to fund the massive coronavirus stimulus
+              program. Who will buy it?
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="editor-heading col-sm-12 mb-1">U.S.</div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-7 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-8 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">FBI Raids Medical Spa for Selling False Coronavirus Treatments of Vitamin C</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583987/welsh-health-minister-vaughan-gething.jpg?w=95&h=95&f=ddada6750625ee8ab058a260cab1dfed"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Health Minister 'Embarrassed' After Swearing at Colleague on Zoom Call</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1584006/beijing-china-coronavirus-april-2020.jpg?w=95&h=95&f=dc465179a574d752b38df292c9ce6756"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Coronavirus Cases in China Could Have Been Four Times the Reported Figure</a>
+          </h6>
+
+        </article>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="editor-heading col-sm-12 mb-1">WORLD</div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-4 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-1 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">FBI Raids Medical Spa for Selling False Coronavirus Treatments of Vitamin C</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1584263/intravenous-injection.jpg?w=397&h=265&f=84e35034150a50e817bff41847d503fd"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+          </h6>
+
+        </article>
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1584006/beijing-china-coronavirus-april-2020.jpg?w=95&h=95&f=dc465179a574d752b38df292c9ce6756"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Coronavirus Cases in China Could Have Been Four Times the Reported Figure</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583987/welsh-health-minister-vaughan-gething.jpg?w=95&h=95&f=ddada6750625ee8ab058a260cab1dfed"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Health Minister 'Embarrassed' After Swearing at Colleague on Zoom Call</a>
+          </h6>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="editor-heading col-sm-12 mb-1">BUSINESS</div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-3 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">Fogo de Chão To Receive $20 Million In Small Business Loan</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-5 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">More People Have Filed for Unemployment Than Live in 10 Largest U.S. Cities</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583237/us-wti-oil-price-drop-low-may.jpg?w=95&h=95&f=3a977b66828745e0e34c3d6f6ee778a8"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Low Oil Prices Could Stretch Into May, Analysts Say Following Collapse</a>
+          </h6>
+
+        </article>
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583118/amazon-warehouse-worker.jpg?w=95&h=95&f=b647dd370861b846254133dc4634ea64"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Amazon Staffers Protest Company After 75 Test Positive for Coronavirus</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583055/crude-oil-price-crash-storage.jpg?w=95&h=95&f=46968cbd84285cd5c374bdf4e7060034"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">US Gas Prices Hit Record Lows as Crude Oil Crashes Below $0 For First Time</a>
+          </h6>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="editor-heading col-sm-12 mb-1">TECH & SCIENCE</div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-1 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">China, a Large American Creditor, Won't Be Funding Your Stimulus Check</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-6 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">FBI Raids Medical Spa for Selling False Coronavirus Treatments of Vitamin C</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583650/irgc-iran-navy-persian-gulf-encounter.jpg?w=95&amp;h=95&amp;l=0&amp;t=0&amp;f=a475c7405b6046855f42c8be8e46ce9d"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Trump Threatens to 'Shoot Down, Destroy' Iran Ships Amid Gulf Tensions</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583987/welsh-health-minister-vaughan-gething.jpg?w=95&h=95&f=ddada6750625ee8ab058a260cab1dfed"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Health Minister 'Embarrassed' After Swearing at Colleague on Zoom Call</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1584006/beijing-china-coronavirus-april-2020.jpg?w=95&h=95&f=dc465179a574d752b38df292c9ce6756"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">Coronavirus Cases in China Could Have Been Four Times the Reported Figure</a>
+          </h6>
+
+        </article>
+
+      </div>
+
+    </div>
+
+    <div class="row mt-3">
+      <div class="editor-heading col-sm-12 mb-1">SPORTS</div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-2 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">2020 NFL Draft: Schedule, Start Time, Where to Watch on TV and Online</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+        <div class="feature-img editors-pic-4 flex-h pb-0">
+        </div>
+
+        <h3 class="mt-2">
+          <a href="#">2020 NFL Draft Day 1 Picks: Results</a>
+        </h3>
+      </div>
+
+      <div class="editor-grouping col-sm-12 col-md-4">
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1567672/joe-burrow-lsu-tigers.jpg?w=95&h=95&f=59022f5860600ce62c31e63560463f93"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">2020 NFL Draft: Schedule, Start Time, Where to Watch on TV and Online</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583949/chris-grier-miami-dolphins.jpg?w=95&h=95&f=edfd4e05e0095e4d254f977c6c1bb243"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">2020 NFL Draft Order: Which Teams Are More Likely to Trade Picks?</a>
+          </h6>
+
+        </article>
+
+        <article class="flex-h space-between mb-2">
+          <div class="image">
+            <a href="#">
+              <img
+                src="https://d.newsweek.com/en/full/1583896/nfl-draft-betting.jpg?w=95&h=95&f=f8aee03860d5449effcc3075e8e8fe1a"
+                alt="" class="thumbnail">
+            </a>
+          </div>
+
+          <h6>
+            <a href="#">NFL Draft 2020 Expected to Shatter Betting Records</a>
+          </h6>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <div class="">
+      <!-- <div>Test template</div> -->
+      <div class="row">
+
+        <div class=" col-sm-12 col-lg-7">
+          <h6>SUBSCRIBE</h6>
+          <div class="row">
+
+            <div class="subscribe-block">
+              <div class="subscribe-img col-md-4">
+
+              </div>
+              <div class="subscribe-body col-md-8">
+                <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+                <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
+                <a href="#"><span class="red-button">Subscribe ></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-5">
+          <h6>NEWSLETTER</h6>
+          <div class="row">
+            <div class="col-md-4 newsletter-img">
+              <!-- <div class="newsletter-img"></div> -->
+            </div>
+            <div class=" col-md-8">
+              <div class="newsletter-text">
+                <h3>The Starting 5</h3>
+                <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                <span class="red-button">Sign up > </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer>
+
+      <div class="footer-main row">
+        <div class="footer-logo">
+          <a class="brand" href="#">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 395.6 60" style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+              <g>
+                <path class="st0"
+                  d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                </path>
+              </g>
+            </svg>
+          </a>
+        </div>
+
+        <div class="copyright">
+          © 2020 NEWSWEEK
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tumblr"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+
+        <div class="footer-links-edition flex-h align-baseline">
+          <label><strong>Editions:</strong></label>
+          <ul class="footer-menu flex-h">
+            <li class="leaf"><a href="#">U.S. Edition</a></li>
+            <li class="leaf"><a href="#">日本</a></li>
+            <li class="leaf"><a href="#">Pakistan</a></li>
+            <li class="leaf"><a href="#">Polska</a></li>
+            <li><a href="#">România</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-menu">
+          <ul class="footer-menu extra-links">
+            <li class="leaf"><a href="#">About Us</a></li>
+            <li class="leaf"><a href="#">Corrections</a></li>
+            <li class="leaf"><a href="#">Contact Us</a></li>
+            <li class="leaf"><a href="#">Editorial Guidelines</a></li>
+            <li class="leaf"><a href="#">Advertise</a></li>
+            <li class="leaf"><a href="#">Copyright</a></li>
+            <li class="leaf"><a href="#">Terms &amp; Conditions</a></li>
+            <li class="leaf"><a href="#">Privacy Policy</a></li>
+            <li class="leaf"><a href="#">Cookie Policy</a></li>
+            <li class="leaf"><a href="#">Terms of Sale</a></li>
+            <li class="leaf"><a href="#">Archive</a></li>
+            <li class="leaf"><a href="#">Announcements</a></li>
+            <li><a href="#" class="">Consent preferences</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <script src="https://kit.fontawesome.com/80a3ac2a2d.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

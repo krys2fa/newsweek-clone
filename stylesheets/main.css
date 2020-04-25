@@ -1,0 +1,617 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+h6 {
+  color: #f72210;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.flex-h,
+.flex-v {
+  display: flex;
+}
+
+.flex-v {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-baseline {
+  align-items: baseline !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.small-screen {
+  padding: 0 20px;
+}
+
+.large-screen,
+.bar,
+.main-menu {
+  display: none;
+}
+
+nav {
+  background-color: #f72210;
+  height: 50px;
+  color: #fff;
+  grid-template-columns: 40% 60%;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  margin: auto;
+  width: 100px;
+}
+
+.logo svg {
+  fill: #fff;
+  height: 20px;
+  width: 100%;
+}
+
+.weather-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.weather-text {
+  font-size: 15px;
+}
+
+.subscribe a {
+  background-color: #fff;
+  color: #f72210;
+  padding: 0 5px;
+}
+
+.signin,
+.subscribe {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signin {
+  margin-left: 20px;
+}
+
+.menu-bar {
+  height: 50px;
+  cursor: pointer;
+  font-size: 26px;
+  text-align: center;
+  color: #999;
+  padding-top: 6px;
+  margin-left: 10px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 40% 50% 10%;
+  margin: 0 auto;
+}
+
+.menu-list a {
+  font-weight: bold;
+}
+
+.main-content {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.title-color {
+  color: #03030366;
+}
+
+.featured h3,
+.featured h6,
+.top-story h6,
+.summary {
+  margin: 10px 0;
+}
+
+.featured a {
+  font-weight: bold;
+}
+
+.tag {
+  display: block;
+  color: #f72210;
+  text-transform: uppercase;
+  background-color: #ffffffe6;
+  font: bold 17px/16px "Roboto Condensed", sans-serif;
+  position: relative;
+  top: 164px;
+  height: 30px;
+  padding: 8px 15px 9px;
+}
+
+.top-story-tag {
+  top: 212px;
+}
+
+.top-story-img {
+  height: 242px;
+  background-image: url("https://d.newsweek.com/en/full/1583798/iran-navy-irgc-persian-gulf-encounter.jpg?w=591&h=364&f=a116cf0c46fa002bc709a4cff1c4baa4");
+  margin-bottom: 10px;
+}
+
+.top-story {
+  margin-bottom: 20px;
+}
+
+.editor-img,
+.feature-img {
+  height: 195px;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  background-size: 100%;
+}
+
+.feature-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583792/gov-andrew-cuomo-press-briefing-april-2020.jpg?w=397&h=265&q=90&f=45a5935b5600750b4a55bc73eba66678");
+}
+
+.feature-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583813/las-vegas-mayor-carolyn-goodman.jpg?w=397&h=265&q=90&f=1288956f95839d515a4e899ee10d2d52");
+}
+
+.feature-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1583743/china-us-treasury-stimulus-check.jpg?w=397&h=265&q=90&f=c0ff2c520ba00834323f06b0160c039a");
+}
+
+.feature-img-4 {
+  background-image: url("https://d.newsweek.com/en/full/1583786/trump-white-house.jpg?w=397&h=265&q=90&f=548942dde9509e22fbb23bb3406ae59e");
+}
+
+.feature-img-5 {
+  background-image: url("https://d.newsweek.com/en/full/1583616/mark-zuckerberg.jpg?w=397&h=265&l=0&t=0&q=90&f=27af46117b473388c86e609283016d9b");
+}
+
+.versus {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/40px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 14px auto 18px;
+}
+
+.editor-img {
+  height: 195px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+}
+
+.editor-heading {
+  color: #f72210;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.editors-pic-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583723/prison.jpg?w=397&h=295&f=e9f728d5878d2e7f2fa202ad2a2083e7");
+}
+
+.editors-pic-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583902/grocery-shopping-during-coronavirus-pandemic.jpg?w=397&h=295&f=d9e18d18477492273e4339380ab126b0");
+}
+
+.editors-pic-3 {
+  background-image: url("https://d.newsweek.com/en/full/1583743/china-us-treasury-stimulus-check.jpg?w=397&h=295&f=1dab576ee81a648988f0cdf8346399aa");
+}
+
+.editors-pic-4 {
+  background-image: url("https://d.newsweek.com/en/full/1583877/prince-louis-celebrates-turning-two.jpg?w=397&h=295&f=ec28ba3ff1b74acd4e7e5f2d833ce173");
+}
+
+.editors-pic-5 {
+  background-image: url("https://d.newsweek.com/en/full/1583698/food-bank.jpg?w=397&h=295&l=0&t=0&f=1ce73f8f83590f5c54cfed34e0f60152");
+}
+
+.editors-pic-6 {
+  background-image: url("https://d.newsweek.com/en/full/1583668/istock-world-book-day-2020.jpg?w=397&h=295&f=9e8298958f31fff8b5092253f66c83b1");
+}
+
+.editors-pic-7 {
+  background-image: url("https://d.newsweek.com/en/full/1583258/shakespeare-lockdown-movies-theatre-family.jpg?w=397&h=295&f=5b18763b1a6297b273e12d4eb794b772");
+}
+
+.editors-pic-8 {
+  background-image: url("https://d.newsweek.com/en/full/1583555/covid19-coronavirus-conjunctivitis-getty-stock.jpg?w=397&h=295&f=8e26bcb70caf8a68460a053486f42980");
+}
+
+.first-editors-pic {
+  height: 385px;
+}
+
+.first-editors-tag {
+  top: 355px;
+}
+
+.hero-title {
+  font-weight: bold;
+}
+
+.hero-img {
+  height: 290px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.hero-tag {
+  color: #272727;
+  text-transform: capitalize;
+  font-weight: normal;
+  background-color: #b5bcc4;
+  top: 260px;
+  width: 80%;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.hero-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1578426/zoe-monterola-founder-six-feet-supplies.jpg?w=397&h=397&f=f7a624e81aa902878bb39d5fe83e971f");
+}
+
+.hero-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1581628/sandra-sacco-face-masks-coronavirus.jpg?w=397&h=397&f=7892f6ddd82131592228622320b031ef");
+}
+
+.hero-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1582032/riya-ortiz-damayan-migrant-workers-association.jpg?w=397&h=397&f=53de83c7597de80f95461e7b0774eada");
+}
+
+.cnt-img-1 {
+  background-image: url("https://d.newsweek.com/en/full/1583546/jane-goodall-gombe-national-park.jpg?w=397&h=397&f=f50a96dc831960add317ee03eb1794d2");
+}
+
+.cnt-img-2 {
+  background-image: url("https://d.newsweek.com/en/full/1583367/susan-portnoy-1.jpg?w=397&h=397&f=9f78c9fa9d117991919b49684a5d9140");
+}
+
+.cnt-img-3 {
+  background-image: url("https://d.newsweek.com/en/full/1552272/cul-map-underwater-03.jpg?w=397&h=397&f=38a37908ac75c7b800c8c3306baa948d");
+}
+
+.thumbnail {
+  float: left;
+  width: 95px;
+  height: 95px;
+  margin-right: 10px;
+}
+
+.opinions {
+  margin-top: 20px;
+}
+
+.opinion {
+  margin-bottom: 20px;
+}
+
+.opinion-info {
+  margin-left: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+.byline {
+  font-size: 14px;
+  line-height: 21px;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.latest-news {
+  margin-top: 20px;
+}
+
+.content {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.image-red-top {
+  border-top: 4px solid #f00;
+}
+
+.image-blue-top {
+  border-top: 4px solid #00f;
+}
+
+.debate {
+  border-bottom: 1px solid #eee;
+}
+
+.debator {
+  border-top: 1px solid #eee;
+  margin-top: 3px;
+}
+
+.debator span {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.debator a {
+  font-weight: bold;
+}
+
+.headshot {
+  height: 63px;
+  width: 63px;
+}
+
+.subscribe-block {
+  background-color: #f4f5f6;
+  margin: 10px 15px 20px;
+  padding-top: 20px;
+}
+
+.subscribe-img {
+  height: 241px;
+  margin: 0 auto;
+  width: 100%;
+  background:
+    url("https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=170&q=95&f=1a0d984a3141e5762557f214ca2a1540"),
+    url("https://d.newsweek.com/en/full/1579878/april-17-24-2020-cover.jpg?w=170&q=95&f=b4884b3be2e05e586232cc3f3d569aa8");
+  background-repeat: no-repeat;
+  background-position: 85% 100%, 30% 15%;
+}
+
+.mag-background {
+  background-color: #f4f5f6;
+}
+
+.mag-pic-1 {
+  background-image: url("https://d.newsweek.com/en/full/1582550/fe-whitmer-q.jpg?w=466&h=311&l=40&t=43&q=90&f=3a04771e849065ff652402c4dd0333ac");
+}
+
+.mag-pic-2 {
+  background-image: url("https://d.newsweek.com/en/full/1582382/fe-whitmer-banner.jpg?w=466&h=311&l=52&t=45&q=90&f=8e32ab6b0456788b57a6b9ebd6b281bf");
+}
+
+.mag-pic-3 {
+  background-image: url("https://d.newsweek.com/en/full/1579624/bronx-nyc-hospital-tent-coronavirus-march-2020.jpg?w=466&h=311&q=90&f=36a1e5404c7d245dc3d11e18ba778436");
+}
+
+.mag-pic-4 {
+  background-image: url("https://d.newsweek.com/en/full/1581592/cul-the-last-dance-banner.jpg?w=466&h=311&l=64&t=52&q=90&f=3d5db0a981677ca610a3170abbc9428d");
+}
+
+.mag-pic-5 {
+  background-image: url("https://d.newsweek.com/en/full/1579490/coronavirus-pandemic-covid-19-new-york.jpg?w=466&h=311&q=90&f=9dcb631881b3d1da85b177f53f0fe88c");
+}
+
+.mag-pic-6 {
+  background-image: url("https://d.newsweek.com/en/full/1581931/cul-uncharted-books-banner.jpg?w=466&h=311&q=90&f=761db87ab1263b6a0614fe17874fc744");
+}
+
+.mag-pic-7 {
+  background-image: url("https://d.newsweek.com/en/full/1583412/no-place-like-home.jpg?w=480&h=320&q=90&f=431234b94b482f2b64a875274485f6ba");
+}
+
+.mag-pic-8 {
+  background-image: url("https://d.newsweek.com/en/full/1582633/may-01-2020-cover.jpg?w=360&h=480&q=90&f=aa6329ca3fcf4bd58f2da596650d190c");
+}
+
+.label {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.label-1 {
+  background-color: #f72210;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.label-2 {
+  margin-left: 10px;
+  padding-top: 6px;
+}
+
+.label-2 a {
+  color: #f00;
+}
+
+.logo-icon {
+  flex: none;
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url("https://g.newsweek.com/www/images/logo-n1.svg") center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+.subscribe-section {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.subscribe-body {
+  text-align: center;
+  line-height: 1.5;
+  color: #333;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.subscribe-body h3,
+.subscribe-body p {
+  margin: 5px auto;
+  padding: 0 20px;
+}
+
+.subscribe-body h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subscribe-body p {
+  color: #888;
+  font-weight: normal;
+}
+
+.newsletter {
+  padding: 15px 0;
+}
+
+.newsletter-img {
+  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / 90% no-repeat;
+  height: 160px;
+}
+
+.newsletter-text {
+  text-align: center;
+  border: 1px solid #eee;
+  margin: auto;
+}
+
+.newsletter-text h3 {
+  margin: 20px auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.newsletter-text p {
+  margin: auto;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.red-button {
+  display: inline-block;
+  background-color: #f72210;
+  padding: 10px 10px 10px 12px;
+  color: white;
+  font: bold 18px/18px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.footer-logo {
+  margin: 20px 30px 15px 0;
+}
+
+.footer-logo svg {
+  fill: #f72210;
+  width: 85%;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.social-icons {
+  font-size: 25px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  margin: 0 auto;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  padding-bottom: 20px;
+  color: #666;
+}
+
+.footer-main {
+  margin: 10px auto 0;
+  padding-top: 10px;
+}
+
+.footer-links-edition label {
+  margin-top: 6px;
+  margin-right: 15px;
+}
+
+.footer-links-edition ul {
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 0;
+}
+
+.footer-links-edition li {
+  margin-right: 20px;
+}
+
+.footer-menu {
+  list-style: none;
+  color: #eee;
+}
+
+.footer-menu a {
+  color: #666;
+}
+
+.extra-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.extra-links li {
+  margin: 0 10px 0 0;
+}
