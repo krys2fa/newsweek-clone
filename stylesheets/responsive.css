@@ -16,10 +16,9 @@
     display: block;
   }
 
-  .actions {
-    margin-left: 115px;
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
+  .signin,
+  .subscribe a {
+    font-size: 18px;
   }
 
   .subscribe-mobile {
@@ -140,7 +139,7 @@
   .weather-info {
     margin: 0;
   }
-
+/* 
   .left {
     width: 20%;
     margin: 0 auto;
@@ -155,7 +154,7 @@
   .right {
     width: 20%;
     margin: 40px 0 10px 50px;
-  }
+  } */
 
   .middle svg {
     fill: #fff;
