@@ -62,6 +62,10 @@ h6 {
   align-items: center !important;
 }
 
+.small-screen {
+  padding: 0 20px;
+}
+
 .large-screen,
 .bar,
 .main-menu {
@@ -73,6 +77,18 @@ nav {
   height: 50px;
   color: #fff;
   grid-template-columns: 40% 60%;
+}
+
+main {
+  margin-top: 60px;
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  /* left: 0;
+  right: 0; */
 }
 
 .logo {
@@ -104,7 +120,6 @@ nav {
 .signin,
 .subscribe {
   font-size: 14px;
-  margin-right: 5px;
 }
 
 .signin {
@@ -118,6 +133,7 @@ nav {
   text-align: center;
   color: #999;
   padding-top: 6px;
+  margin-left: 20px;
 }
 
 .actions {
@@ -259,9 +275,8 @@ nav {
 }
 
 .hero-img {
-  width: 290px;
   height: 290px;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   margin-bottom: 10px;
 }

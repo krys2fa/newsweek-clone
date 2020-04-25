@@ -4,7 +4,7 @@
   }
 
   .small-screen {
-     margin: 0 30px;
+    margin: 0 30px;
   }
 
   .weather-info {
@@ -97,7 +97,6 @@
   }
 
   .hero-img {
-    width: 117px;
     height: 117px;
   }
 
@@ -139,22 +138,6 @@
   .weather-info {
     margin: 0;
   }
-/* 
-  .left {
-    width: 20%;
-    margin: 0 auto;
-  }
-
-  .middle {
-    width: 60%;
-    color: #fff;
-    margin: 0 auto;
-  }
-
-  .right {
-    width: 20%;
-    margin: 40px 0 10px 50px;
-  } */
 
   .middle svg {
     fill: #fff;
@@ -232,15 +215,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-   .bar,
-   .main-menu,
-   .large-screen {
-     margin: 0 140px;
-   }
+  .bar,
+  .main-menu,
+  .large-screen {
+    margin: 0 140px;
+  }
 }
 
 @media screen and (min-width: 2560px) {
-
   .bar,
   .main-menu,
   .large-screen {
