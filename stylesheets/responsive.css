@@ -175,6 +175,19 @@
     margin-top: 100px;
     display: block;
     height: 15px;
+    width: 3%;
+  }
+
+  .bar::before {
+    position: relative;
+    top: 0;
+    right: -864px;
+    content: "";
+    display: block;
+    width: 100px;
+    background-color: #f72210;
+    border-left: 12px solid white;
+    border-top: 13px solid #f72210;
   }
 
   .bar,
@@ -267,6 +280,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+  .bar::before {
+    right: -1060px;
+  }
+
   .bar,
   .main-menu,
   .large-screen {
@@ -284,6 +302,11 @@
 }
 
 @media screen and (min-width: 2560px) {
+
+  .bar::before {
+    right: -1080px;
+  }
+
   .bar,
   .main-menu,
   .large-screen {
