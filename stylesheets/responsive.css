@@ -173,18 +173,16 @@
 
   .bar {
     margin-top: 100px;
-    display: block;
+    display: grid;
+    grid-template-columns: 90% 10%;
     height: 15px;
-    width: 3%;
+    /* width: 3%; */
   }
 
-  .bar::before {
-    position: relative;
-    top: 0;
-    right: -864px;
+  .bar-two {
     content: "";
     display: block;
-    width: 100px;
+    width: 100%;
     background-color: #f72210;
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
